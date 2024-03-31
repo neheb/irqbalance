@@ -34,7 +34,7 @@ if cdata.get('HAVE_IRQBALANCEUI')
 
   install_man(
     'irqbalance-ui.1',
-    install_dir: get_option('mandir') + '/man1',
+    install_dir: get_option('mandir') / 'man1',
     install_mode: 'rw-r--r--',
     locale: 'en',
   )
@@ -67,7 +67,7 @@ executable(
 
 install_man(
   'irqbalance.1',
-  install_dir: get_option('mandir') + '/man1',
+  install_dir: get_option('mandir') / 'man1',
   install_mode: 'rw-r--r--',
   locale: 'en',
 )
